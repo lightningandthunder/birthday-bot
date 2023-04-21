@@ -1,0 +1,19 @@
+[package]
+name = "rust-birthday"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = "0.4.22"
+dotenv = "0.15.0"
+quick-error = "2.0.1"
+rand = "0.8.5"
+regex = "1.6.0"
+rustls = "0.20.8"
+serde = "1.0.145"
+serde_json = "1.0.87"
+serenity = "0.11.5"
+sqlx = { version = "0.6", features = [ "runtime-tokio-rustls", "sqlite", "macros", "migrate", "chrono", "json" ] }
+tokio = { version = "1.19.2", features = ["full"] }
